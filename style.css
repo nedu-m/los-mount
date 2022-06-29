@@ -9,13 +9,18 @@ body{
   margin: 0;
 }
 
+.general_grid {
+  display: grid;
+  grid-template-rows: repeat(3, [row] 1fr);
+}
+
 #first_section {
   background:url(./images/background-image.jpg) no-repeat #cfcfe6;
   height: 90vh;
   width: 100%;
   position: absolute;
+  overflow: hidden;
 }
-
 
 nav ul {
   list-style-type: none;
@@ -46,15 +51,9 @@ nav ul {
 .container {
   display: grid;
   place-content: center;
+  position: relative;
 }
 
 .child {
-  justify-items: center;
-  padding: 10.6rem 1rem 1rem 11rem;
+  padding: 7rem 15rem 7rem;
 }
-
-.section-div {
-  background-color: #e8e8ef;
-  border: 1px solid white;
-}
-
